@@ -2,7 +2,7 @@
 This folder contains array problems from LeetCode with explanations and solutions in C++.
 
 ## 1. Two Sum
-- **Problem Link**: [LeetCode 1](https://leetcode.com/problems/two-sum/)
+- **Problem Link**: [LeetCode #1](https://leetcode.com/problems/two-sum/)
 - **Category**: Arrays
 - **Difficulty**: Easy
 - **Tags**: Array, Hash Map
@@ -29,7 +29,8 @@ Output:
 `[0, 1]`  
 
 Explanation: nums[0] + nums[1] = 2 + 7 = 9.
-
+ - [Solution](two_sum.cpp)
+   
 ## 2. Best Time to Buy and Sell Stock
 
 - **Problem Link**: [LeetCode #121](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/)
@@ -57,3 +58,34 @@ Output:
 
 Explanation: Buy on day 2 (price=1) and sell on day 5 (price=6).  
 Profit = 6 - 1 = 5.
+ - [Solution](BestTimeToBuySellStock.cpp)
+   
+## 3. Maximum Subarray
+
+- **Problem Link**: [LeetCode #53](https://leetcode.com/problems/maximum-subarray/)
+- **Category**: Arrays
+- **Difficulty**: Medium
+- **Tags**: Array, Dynamic Programming
+
+### Problem Statement
+Given an integer array `nums`, find the contiguous subarray (containing at least one number) which has the largest sum, and return its sum.
+
+### Approach (Kadane’s Algorithm)
+- Initialize `currentSum = nums[0]` and `maxSum = nums[0]`.
+- For each element:
+  - `currentSum = max(nums[i], currentSum + nums[i])`
+  - `maxSum = max(maxSum, currentSum)`
+- Return `maxSum`.
+
+### Complexity
+- Time Complexity: O(n)
+- Space Complexity: O(1)
+
+### Example
+Input:  
+`nums = [-2,1,-3,4,-1,2,1,-5,4]`  
+Output:  
+`6`  
+
+Explanation: The subarray `[4,-1,2,1]` has the largest sum = 6.
+ - [Solution]( MaximumSubarray.cpp)
