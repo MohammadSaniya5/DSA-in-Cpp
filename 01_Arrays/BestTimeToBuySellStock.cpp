@@ -15,6 +15,6 @@ int maxProfit(vector<int>& prices) {
 
 int main() {
     vector<int> prices = {7, 1, 5, 3, 6, 4};
-    cout << "Maximum Profit: " << maxProfit(prices) << endl; // Expected Output: 5
+    cout << "Maximum Profit: " << maxProfit(prices) << endl; 
     return 0;
 }
