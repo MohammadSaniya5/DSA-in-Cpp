@@ -146,7 +146,7 @@ Output:
 `[[1,6],[8,10],[15,18]]`
 - [Solution](Merge_intervals.cpp)
 
-## 5. Rotate Image
+## 6. Rotate Image
 
 - **Problem Link**: [LeetCode #48](https://leetcode.com/problems/rotate-image/)
 - **Category**: Arrays (Matrix)
@@ -179,3 +179,30 @@ Output:
 [9,6,3]
 ]
 - [Solution](Rotate_image.cpp)
+
+## 7. Search in Rotated Sorted Array
+
+- **Problem Link**: [LeetCode #33](https://leetcode.com/problems/search-in-rotated-sorted-array/)
+- **Category**: Arrays / Binary Search
+- **Difficulty**: Medium
+- **Tags**: Array, Binary Search
+
+### Problem Statement
+Given a rotated sorted array and a target, return its index if found, else -1.
+
+### Approach
+- Use binary search.
+- At each step, one half of the array is sorted.
+- Decide if target lies in the sorted half or the other half.
+- Continue until found.
+
+### Complexity
+- Time Complexity: O(log n)
+- Space Complexity: O(1)
+
+### Example
+Input:  
+`nums = [4,5,6,7,0,1,2], target = 0`  
+Output:  
+`4`
+- [Solution](Searchin_rotated_sorted_array.cpp)
