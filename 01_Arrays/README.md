@@ -207,7 +207,7 @@ Output:
 `4`
 - [Solution](Searchin_rotated_sorted_array.cpp)
 
-## . Majority Element
+## 8. Majority Element
 
 - **Problem Link**: [LeetCode #169](https://leetcode.com/problems/majority-element/)
 - **Category**: Arrays
@@ -231,3 +231,28 @@ Return the element that appears more than ⌊n/2⌋ times (guaranteed to exist).
 Input: `nums = [2,2,1,1,1,2,2]`  
 Output: `2`
 - [Solution]( MajorityElement.cpp)
+
+## 9. Missing Number
+
+- **Problem Link**: [LeetCode #268](https://leetcode.com/problems/missing-number/)
+- **Category**: Arrays
+- **Difficulty**: Easy
+- **Tags**: Array, Math, Bit Manipulation
+
+### Problem
+Given an array containing `n` distinct numbers from 0..n, find the missing one.
+
+### Approaches
+1. **Sum Formula**:  
+   - Expected = n*(n+1)/2  
+   - Missing = expected - actual  
+   - Time O(n), Space O(1)
+
+2. **XOR**:  
+   - XOR(0..n) ^ XOR(nums) = missing  
+   - Time O(n), Space O(1)
+
+### Example
+Input: `nums = [3,0,1]`  
+Output: `2`
+- [Solution]( MissingNumber.cpp)
