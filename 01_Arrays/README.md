@@ -206,3 +206,28 @@ Input:
 Output:  
 `4`
 - [Solution](Searchin_rotated_sorted_array.cpp)
+
+## . Majority Element
+
+- **Problem Link**: [LeetCode #169](https://leetcode.com/problems/majority-element/)
+- **Category**: Arrays
+- **Difficulty**: Easy
+- **Tags**: Array, Boyer–Moore
+
+### Problem
+Return the element that appears more than ⌊n/2⌋ times (guaranteed to exist).
+
+### Approach (Boyer–Moore)
+- Keep a `candidate` and `count`.
+- If `count == 0`, set `candidate = nums[i]`.
+- If `nums[i] == candidate`, `count++`, else `count--`.
+- Final `candidate` is the majority.
+
+### Complexity
+- Time: O(n)
+- Space: O(1)
+
+### Example
+Input: `nums = [2,2,1,1,1,2,2]`  
+Output: `2`
+- [Solution]( MajorityElement.cpp)
