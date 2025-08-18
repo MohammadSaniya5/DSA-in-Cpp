@@ -89,3 +89,59 @@ Output:
 
 Explanation: The subarray `[4,-1,2,1]` has the largest sum = 6.
  - [Solution]( MaximumSubarray.cpp)
+
+## 4. Maximum Product Subarray
+
+- **Problem Link**: [LeetCode #152](https://leetcode.com/problems/maximum-product-subarray/)
+- **Category**: Arrays
+- **Difficulty**: Medium
+- **Tags**: Array, Dynamic Programming
+
+### Problem Statement
+Find the contiguous subarray within an array that has the largest product.
+
+### Approach
+- Maintain both maximum product and minimum product at each index.
+- If current number is negative, swap max and min.
+- Update the result with the maximum found so far.
+
+### Complexity
+- Time Complexity: O(n)
+- Space Complexity: O(1)
+
+### Example
+Input:  
+`nums = [2,3,-2,4]`  
+Output:  
+`6`  
+
+Explanation: The subarray `[2,3]` has the largest product = 6.
+ - [Solution]( maximum_product_Subarray.cpp)
+
+## 5. Merge Intervals
+
+- **Problem Link**: [LeetCode #56](https://leetcode.com/problems/merge-intervals/)
+- **Category**: Arrays
+- **Difficulty**: Medium
+- **Tags**: Array, Sorting
+
+### Problem Statement
+Given an array of intervals, merge all overlapping intervals.
+
+### Approach
+1. Sort intervals by start time.
+2. Traverse intervals:
+   - If current interval overlaps with the last interval in result → merge them.
+   - Else → add as new interval.
+3. Return the merged intervals.
+
+### Complexity
+- Time Complexity: O(n log n) (sorting)
+- Space Complexity: O(n)
+
+### Example
+Input:  
+`intervals = [[1,3],[2,6],[8,10],[15,18]]`  
+Output:  
+`[[1,6],[8,10],[15,18]]`
+- [Solution](Merge_intervals.cpp)
