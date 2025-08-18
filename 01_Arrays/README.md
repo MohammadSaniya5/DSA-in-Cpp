@@ -145,3 +145,37 @@ Input:
 Output:  
 `[[1,6],[8,10],[15,18]]`
 - [Solution](Merge_intervals.cpp)
+
+## 5. Rotate Image
+
+- **Problem Link**: [LeetCode #48](https://leetcode.com/problems/rotate-image/)
+- **Category**: Arrays (Matrix)
+- **Difficulty**: Medium
+- **Tags**: Array, Matrix
+
+### Problem Statement
+Rotate an `n x n` 2D matrix 90 degrees clockwise in place.
+
+### Approach
+1. **Transpose** the matrix: swap matrix[i][j] with matrix[j][i].
+2. **Reverse each row**.
+3. Done in-place.
+
+### Complexity
+- Time Complexity: O(n^2)
+- Space Complexity: O(1)
+
+### Example
+Input:  
+[
+[1,2,3],
+[4,5,6],
+[7,8,9]
+]
+Output:  
+[
+[7,4,1],
+[8,5,2],
+[9,6,3]
+]
+- [Solution](Rotate_image.cpp)
