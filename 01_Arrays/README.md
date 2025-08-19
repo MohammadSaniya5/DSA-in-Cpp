@@ -281,3 +281,37 @@ Must solve without modifying array and O(1) extra space.
 Input: nums = [1,3,4,2,2]  
 Output: 2
 - [Solution]( FindDuplicateNumber.cpp)
+
+## 11. Set Matrix Zeroes
+
+- **Problem Link**: [LeetCode #73](https://leetcode.com/problems/set-matrix-zeroes/)
+- **Category**: Arrays
+- **Difficulty**: Medium
+- **Tags**: Array, Matrix, In-place
+
+### Problem
+If an element in a matrix is 0, set its entire row and column to 0 in place.
+
+### Approach
+- Use first row and column as markers.
+- Track separately if the first row or column need to be zero.
+- Two passes:
+  1. Mark rows/cols with zeros.
+  2. Update cells accordingly.
+- Handle first row and column at the end.
+
+### Complexity
+- Time: O(m*n)
+- Space: O(1)
+
+### Example
+Input:
+[[1,1,1],
+[1,0,1],
+[1,1,1]]
+
+Output:
+[[1,0,1],
+[0,0,0],
+[1,0,1]]
+- [Solution](  SetMatrixZeroes.cpp)
