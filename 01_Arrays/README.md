@@ -315,3 +315,31 @@ Output:
 [0,0,0],
 [1,0,1]]
 - [Solution](  SetMatrixZeroes.cpp)
+
+## 12. Pascal’s Triangle
+
+- **Problem Link**: [LeetCode #118](https://leetcode.com/problems/pascals-triangle/)
+- **Category**: Arrays
+- **Difficulty**: Easy
+- **Tags**: Array, Dynamic Programming
+
+### Idea
+- Build triangle row by row.
+- First and last element of each row = 1.
+- Inner elements: `row[j] = prev[j-1] + prev[j]`.
+
+### Complexity
+- Time: O(numRows^2)
+- Space: O(numRows^2) (for output)
+
+### Example
+Input: `numRows = 5`  
+Output:
+[
+[1],
+[1,1],
+[1,2,1],
+[1,3,3,1],
+[1,4,6,4,1]
+]
+- [Solution](PascalsTriangle.cpp)
