@@ -256,3 +256,28 @@ Given an array containing `n` distinct numbers from 0..n, find the missing one.
 Input: `nums = [3,0,1]`  
 Output: `2`
 - [Solution]( MissingNumber.cpp)
+
+## 10. Find the Duplicate Number
+
+- **Problem Link**: [LeetCode #287](https://leetcode.com/problems/find-the-duplicate-number/)
+- **Category**: Arrays
+- **Difficulty**: Medium
+- **Tags**: Array, Binary Search, Two Pointers, Floyd’s Cycle Detection
+
+### Problem
+Given an array nums containing n+1 integers (values from 1..n), return the duplicate number.
+Must solve without modifying array and O(1) extra space.
+
+### Approach
+- Use Floyd’s Tortoise and Hare algorithm (cycle detection).
+- Phase 1: Detect cycle.
+- Phase 2: Find cycle start = duplicate.
+
+### Complexity
+- Time: O(n)
+- Space: O(1)
+
+### Example
+Input: nums = [1,3,4,2,2]  
+Output: 2
+- [Solution]( FindDuplicateNumber.cpp)
